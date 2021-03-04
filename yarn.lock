@@ -1136,7 +1136,7 @@
   dependencies:
     "@types/hammerjs" "^2.0.36"
 
-"@expo/config-plugins@1.0.20":
+"@expo/config-plugins@1.0.20", "@expo/config-plugins@~1.0.13":
   version "1.0.20"
   resolved "https://registry.yarnpkg.com/@expo/config-plugins/-/config-plugins-1.0.20.tgz#b1964daf063d7ce07c3f135aa92ccf1c60cd6e46"
   integrity sha512-BucZQbi7edu8Pin8zFUNsaQeZAj/8ga7Ei3PKivKZKd5F53DdFU6Yb+ZDyQ0UeOGDi0hZlZWdaBzmQqHEg37TQ==
@@ -3677,6 +3677,13 @@ expo-linking@~2.0.1:
     qs "^6.5.0"
     url-parse "^1.4.4"
 
+expo-location@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/expo-location/-/expo-location-11.0.0.tgz#07df5b1e72cdabdbd9cf53fce985a1ec664dcbd0"
+  integrity sha512-Md/KQiCwED6bHw1kSZt4q0DaAYbabY1N2V0gn/Sj3z8r3dB3+rxWR7KqOAsnnRlQSiQl2qRpMq2HC6v1DtNnsg==
+  dependencies:
+    "@expo/config-plugins" "~1.0.13"
+
 expo-location@~10.0.0:
   version "10.0.0"
   resolved "https://registry.yarnpkg.com/expo-location/-/expo-location-10.0.0.tgz#2923411649434f2f079343b163b13c5c9eee8b2d"
@@ -3711,6 +3718,14 @@ expo-status-bar@~1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/expo-status-bar/-/expo-status-bar-1.0.3.tgz#62b4d6145680abd43ba6ecfa465f835e88bf6263"
   integrity sha512-/Orgla1nkIrfswNHbuAOTbPVq0g3+GrhoQVk7MRafY2dwrFLgXhaPExS+eN2hpmzqPv2LG5cqAZDCQUAjmZYBQ==
+
+expo-task-manager@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/expo-task-manager/-/expo-task-manager-9.0.0.tgz#12e1a69781f88eaf0780f8b190c2f78a825f2071"
+  integrity sha512-vkjolthm0AR0oFdFoL1GWOPIgCnsab6NETRpZTyqZbTJkFTnzRxNJDRGwyMEmuPh6dCPN/xLyZVhkJYnz5LA1g==
+  dependencies:
+    "@expo/config-plugins" "~1.0.13"
+    unimodules-app-loader "~2.0.0"
 
 expo-updates@~0.4.0:
   version "0.4.2"
@@ -7945,6 +7960,11 @@ unimodules-app-loader@~1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/unimodules-app-loader/-/unimodules-app-loader-1.4.0.tgz#8ab738a379b46798aec9e4fda317f17750cd2f92"
   integrity sha512-qBxfXIOLy1KmBDThgmLBPJSNI0xV+6Xz2Sfsu3Hz2ewijaNlgRjSBH3McXIPU/nSVb/vVtcEtDvXuGw3udM0fQ==
+
+unimodules-app-loader@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/unimodules-app-loader/-/unimodules-app-loader-2.0.0.tgz#e870afe86c025e4c28acb62e11810f46e120e56f"
+  integrity sha512-U3mDkWePfpaqMeIuWK7U8TGEi1wG51AkZ0WAafub2LM2h8G8uDogpy5IvDdPCPK/l7hTTJv52jIx27fANmI/DA==
 
 unimodules-barcode-scanner-interface@~5.4.0:
   version "5.4.0"

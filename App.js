@@ -1,9 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
+import * as TaskManager from 'expo-task-manager';
+import * as Location from 'expo-location';
+
+TaskManager.defineTask('bgloc', async ({ data, error }) => {
+  console.log(data);
+});
 
 export default function App() {
   const [selectedImage, setSelectedImage] = React.useState(null);
+
+  useEffect(() => {
+    Location.requestPermissionsAsync().then(() => 
+        Location.startLocationUpdatesAsync('bgloc', {
+          accuracy: Location.Accuracy.High,
+          distanceInterval: 100,
+          timeInterval: 1000,
+          deferredUpdatesInterval: 1000,
+          showsBackgroundLocationIndicator: true,
+          foregroundService: {
+              notificationTitle: 'Repro is fetching your location.',
+              notificationBody: 'Please do not remove.'
+          },
+      })
+    )
+  },[])
 
   let openImagePickerAsync = async () => {
     let permissionResult = await ImagePicker.requestCameraPermissionsAsync();
